@@ -1,0 +1,19 @@
+{
+  "name": "playwright_learning",
+  "version": "1.0.0",
+  "description": "software testing with playwright",
+  "main": "index.js",
+  "scripts": {
+    "test:chrome": "playwright test --config=playwright.config.ts --project=Chromium",
+    "test:webkit": "playwright test --config=playwright.config.ts --project=Webkit",
+    "test:firefox": "playwright test --config=playwright.config.ts --project=Firefox",
+    "test:e2e":"playwright test --config=e2e.config.ts --project=Chromium",
+    "test:swag_labs":"playwright test tests/swag_labs --config=playwright.config.ts --project=Chromium"
+  },
+  "author": "Gowtham",
+  "license": "ISC",
+  "dependencies": {
+    "@playwright/test": "^1.53.1",
+    "prettier": "^3.6.2"
+  }
+}
